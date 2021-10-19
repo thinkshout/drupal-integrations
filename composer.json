@@ -9,22 +9,40 @@
     "extra": {
         "drupal-scaffold": {
             "file-mapping": {
-                "[web-root]/env.dist": {
+                "[project-root]/.ci/build/multidev-save": "assets/.ci/build/multidev-save",
+                "[project-root]/.ci/test/visual-regression/.gitignore": "assets/.ci/test/visual-regression/.gitignore",
+                "[project-root]/.ci/test/visual-regression/package.json": "assets/.ci/test/visual-regression/package.json",
+                "[project-root]/.ci/test/visual-regression/README.md": "assets/.ci/test/visual-regression/README.md",
+                "[project-root]/.github/pull_request_template.md": {
+                    "path": "assets/.github/pull_request_template.md",
+                    "overwrite": false
+                },
+                "[project-root]/.github/ISSUE_TEMPLATE/bug_report.md": {
+                    "path": "assets/.github/ISSUE_TEMPLATE/bug_report.md",
+                    "overwrite": false
+                },
+                "[project-root]/.github/ISSUE_TEMPLATE/feature_request.md": {
+                    "path": "assets/.github/ISSUE_TEMPLATE/feature_request.md",
+                    "overwrite": false
+                },
+                "[project-root]/config-local/config_suite.settings.yml": "assets/config-local/config_suite.settings.yml",
+                "[project-root]/env.dist": {
                     "path": "assets/env.dist",
                     "overwrite": false
                 },
-                "[web-root]/README.md": {
+                "[project-root]/README.md": {
                     "path": "assets/README.md",
                     "overwrite": false
                 },
-                "[web-root]/RoboFile.php": {
+                "[project-root]/RoboFile.php": {
                     "path": "assets/RoboFile.php",
                     "overwrite": false
                 },
-                "[web-root]/sites/default/settings.ts.php": {
-                    "path": "sites/default/settings.ts.php",
+                "[web-root]/sites/default/settings.php": {
+                    "path": "assets/sites/default/settings.php",
                     "overwrite": false
-                }
+                },
+                "[web-root]/sites/default/settings.ts.php": "assets/sites/default/settings.ts.php"
             }
         }
     }
