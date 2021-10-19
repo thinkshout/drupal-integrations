@@ -1,0 +1,31 @@
+{
+    "name": "thinkshout/drupal-integrations",
+    "description": "Add this project to any Drupal distrobution based on drupal/core-composer-scaffold to get some TS resusable code.",
+    "type": "project",
+    "license": "MIT",
+    "conflict": {
+        "drupal/core": "<9"
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "file-mapping": {
+                "[web-root]/env.dist": {
+                    "path": "assets/env.dist",
+                    "overwrite": false
+                },
+                "[web-root]/README.md": {
+                    "path": "assets/README.md",
+                    "overwrite": false
+                },
+                "[web-root]/RoboFile.php": {
+                    "path": "assets/RoboFile.php",
+                    "overwrite": false
+                },
+                "[web-root]/sites/default/settings.ts.php": {
+                    "path": "sites/default/settings.ts.php",
+                    "overwrite": false
+                }
+            }
+        }
+    }
+}

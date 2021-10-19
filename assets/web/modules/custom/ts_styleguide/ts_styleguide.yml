@@ -1,0 +1,7 @@
+ts_styleguide.ts_style_guide:
+  path: '/styleguide'
+  defaults:
+    _controller: 'Drupal\ts_styleguide\Controller\StyleGuideController::tsStyleGuide'
+    _title: 'ts Style Guide'
+  requirements:
+    _custom_access: 'Drupal\ts_styleguide\Controller\StyleGuideController::tsStyleGuideAccess'
