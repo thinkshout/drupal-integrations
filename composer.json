@@ -39,10 +39,10 @@
                     "overwrite": false
                 },
                 "[web-root]/sites/default/settings.php": {
-                    "path": "assets/sites/default/settings.php",
+                    "path": "assets/web/sites/default/settings.php",
                     "overwrite": false
                 },
-                "[web-root]/sites/default/settings.ts.php": "assets/sites/default/settings.ts.php"
+                "[web-root]/sites/default/settings.ts.php": "assets/web/sites/default/settings.ts.php"
             }
         }
     }
