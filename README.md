@@ -11,6 +11,13 @@ This project enables the following useful things:
 This project must be enabled in the top-level composer.json file, or it will be ignored and will not perform any of its functions.
 ```
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "name": "thinkshout/drupal-integrations",
+            "url": "git@github.com:thinkshout/drupal-integrations.git"
+        }
+    ]
     ...
     "require": {
         "thinkshout/drupal-integrations": "^9"
