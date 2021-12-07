@@ -27,7 +27,7 @@
                 },
                 "[project-root]/config-local/config_suite.settings.yml": "assets/config-local/config_suite.settings.yml",
                 "[project-root]/env.dist": {
-                    "path": "assets/env.dist",
+                    "path": "assets/.env.dist",
                     "overwrite": false
                 },
                 "[project-root]/README.md": {
