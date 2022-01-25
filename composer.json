@@ -27,7 +27,7 @@
                 },
                 "[project-root]/config-split/config-suite/config_suite.settings.yml": "assets/config-split/config-suite/config_suite.settings.yml",
                 "[project-root]/config-split/local/stage_file_proxy.settings.yml": "assets/config-split/local/stage_file_proxy.settings.yml",
-                "[project-root]/env.dist": {
+                "[project-root]/.env.dist": {
                     "path": "assets/.env.dist",
                     "overwrite": false
                 },
