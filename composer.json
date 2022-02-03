@@ -25,8 +25,9 @@
                     "path": "assets/.github/ISSUE_TEMPLATE/feature_request.md",
                     "overwrite": false
                 },
-                "[project-root]/config-local/config_suite.settings.yml": "assets/config-local/config_suite.settings.yml",
-                "[project-root]/env.dist": {
+                "[project-root]/config-split/config-suite/config_suite.settings.yml": "assets/config-split/config-suite/config_suite.settings.yml",
+                "[project-root]/config-split/local/stage_file_proxy.settings.yml": "assets/config-split/local/stage_file_proxy.settings.yml",
+                "[project-root]/.env.dist": {
                     "path": "assets/.env.dist",
                     "overwrite": false
                 },
