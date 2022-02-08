@@ -6,6 +6,9 @@
     "conflict": {
         "drupal/core": "<9"
     },
+    "require": {
+        "vlucas/phpdotenv": ">=5.0",
+    },
     "extra": {
         "drupal-scaffold": {
             "file-mapping": {
@@ -30,6 +33,10 @@
                 "[project-root]/.env.dist": {
                     "path": "assets/.env.dist",
                     "overwrite": false
+                },
+                "[project-root]/load.environment.php": {
+                    "path": "assets/load.environment.php",
+                    "overwrite": true
                 },
                 "[project-root]/README.md": {
                     "path": "assets/README.md",
