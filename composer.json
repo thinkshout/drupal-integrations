@@ -28,8 +28,8 @@
                     "path": "assets/.github/ISSUE_TEMPLATE/feature_request.md",
                     "overwrite": false
                 },
-                "[project-root]/config-split/config-suite/config_suite.settings.yml": "assets/config-split/config-suite/config_suite.settings.yml",
-                "[project-root]/config-split/local/stage_file_proxy.settings.yml": "assets/config-split/local/stage_file_proxy.settings.yml",
+                "[project-root]/config-split/config_suite.settings.yml": "assets/config-split/config_suite.settings.yml",
+                "[project-root]/config-split/stage_file_proxy.settings.yml": "assets/config-split/stage_file_proxy.settings.yml",
                 "[project-root]/.env.dist": {
                     "path": "assets/.env.dist",
                     "overwrite": false
