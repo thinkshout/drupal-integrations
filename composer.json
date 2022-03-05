@@ -38,9 +38,9 @@
                     "path": "assets/load.environment.php",
                     "overwrite": true
                 },
-                "[project-root]/README.md": {
-                    "path": "assets/README.md",
-                    "overwrite": false
+                "[project-root]/README.md.orig": {
+                    "path": "assets/README.md.orig",
+                    "overwrite": true
                 },
                 "[project-root]/RoboFile.php": {
                     "path": "assets/RoboFile.php",
