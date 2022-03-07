@@ -12,7 +12,10 @@
     "extra": {
         "drupal-scaffold": {
             "file-mapping": {
-                "[project-root]/.ci/build/multidev-save": "assets/.ci/build/multidev-save",
+                "[project-root]/.ci/build/multidev-save": {
+                    "path":"assets/.ci/build/multidev-save",
+                    "gitignore": false
+                },
                 "[project-root]/.ci/test/visual-regression/.gitignore": "assets/.ci/test/visual-regression/.gitignore",
                 "[project-root]/.ci/test/visual-regression/package.json": "assets/.ci/test/visual-regression/package.json",
                 "[project-root]/.ci/test/visual-regression/README.md": "assets/.ci/test/visual-regression/README.md",
