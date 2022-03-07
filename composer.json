@@ -50,7 +50,8 @@
                     "path": "assets/web/sites/default/settings.php",
                     "overwrite": false
                 },
-                "[web-root]/sites/default/settings.ts.php": "assets/web/sites/default/settings.ts.php"
+                "[web-root]/sites/default/settings.ts.php": "assets/web/sites/default/settings.ts.php",
+                "[web-root]/sites/default/services.dev.yml": "assets/web/sites/default/services.dev.yml"
             }
         }
     }
