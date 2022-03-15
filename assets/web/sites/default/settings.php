@@ -4,8 +4,8 @@
  * If not on Pantheon - load our .env file.
  */
 if (!defined('PANTHEON_ENVIRONMENT')) {
-    $dotenv = new Dotenv\Dotenv(__DIR__ . '/../../../');
-    $dotenv->overload();
+  $dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__ . '/../../../');
+  $dotenv->safeLoad();
 }
 
 /**
@@ -25,7 +25,16 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 include __DIR__ . "/settings.pantheon.php";
 
 /**
- * Turn on TS-specific settings.
+ * Skipping permissions hardening will make scaffolding
+ * work better, but will also raise a warning when you
+ * install Drupal.
+ *
+ * https://www.drupal.org/project/drupal/issues/3091285
+ */
+// $settings['skip_permissions_hardening'] = TRUE;
+
+/**
+ * If there is a ts settings file, then include it
  */
 $ts_settings = __DIR__ . "/settings.ts.php";
 if (file_exists($ts_settings)) {
