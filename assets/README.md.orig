@@ -5,7 +5,7 @@ project using this repo.
 
 ## Development set-up
 
-This is a Drupal 8 site built using the [robo taskrunner](http://robo.li/). As such, it does not require separate `~/Project` and `~/Sites` folders. Install the repo directly into `~/Sites` using `git clone` and you will be ready to begin.  
+This is a Drupal 9 site built using the [robo taskrunner](http://robo.li/). As such, it does not require separate `~/Project` and `~/Sites` folders. Install the repo directly into `~/Sites` using `git clone` and you will be ready to begin.
 
 This site uses PHP 7.4: make sure your local environment is running PHP 7.4 (you can run `php --version` to verify).
 
@@ -77,11 +77,11 @@ robo install
 
 ### Committing code -- do this regularly
 
-Each time you start a new task, you should create a branch from `production` with the github ticket number and a short
+Each time you start a new task, you should create a branch from `main` with the github ticket number and a short
 description of the ticket's goal in the branch:
 
 ```
-git checkout production
+git checkout main
 git pull
 git checkout -b issue-123-short-description
 ```
