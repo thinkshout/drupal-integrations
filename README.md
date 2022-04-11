@@ -20,7 +20,7 @@ This project must be enabled in the top-level composer.json file, or it will be 
     ]
     ...
     "require": {
-        "thinkshout/drupal-integrations": "^9"
+        "thinkshout/drupal-integrations": "^1.0@alpha"
     },
     ...
     "extra": {
