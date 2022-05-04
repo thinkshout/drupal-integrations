@@ -58,9 +58,9 @@
                 },
                 "[web-root]/sites/default/settings.ts.php": "assets/web/sites/default/settings.ts.php",
                 "[web-root]/sites/default/services.dev.yml": "assets/web/sites/default/services.dev.yml",
-                "[web-root]/modules/contrib/ts_styleguide/src/Controller/StyleGuideController.php": "assets/web/modules/contrib/ts_styleguide/src/Controller/StyleGuideController.php",
-                "[web-root]/modules/contrib/ts_styleguide/ts_styleguide.info.yml": "assets/web/modules/contrib/ts_styleguide/ts_styleguide.info.yml",
-                "[web-root]/modules/contrib/ts_styleguide/ts_styleguide.routing.yml": "assets/web/modules/contrib/ts_styleguide/ts_styleguide.routing.yml"
+                "[web-root]/modules/thinkshout/ts_styleguide/src/Controller/StyleGuideController.php": "assets/web/modules/thinkshout/ts_styleguide/src/Controller/StyleGuideController.php",
+                "[web-root]/modules/thinkshout/ts_styleguide/ts_styleguide.info.yml": "assets/web/modules/thinkshout/ts_styleguide/ts_styleguide.info.yml",
+                "[web-root]/modules/thinkshout/ts_styleguide/ts_styleguide.routing.yml": "assets/web/modules/thinkshout/ts_styleguide/ts_styleguide.routing.yml"
             }
         }
     }
