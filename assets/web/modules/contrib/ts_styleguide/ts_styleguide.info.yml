@@ -1,6 +1,0 @@
-name: 'TS Styleguide'
-type: module
-description: 'Enables a styleguide at /styleguide'
-core_version_requirement: '^8.8.0 || ^9'
-package: ThinkShout
-dependencies: {  }
