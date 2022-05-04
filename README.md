@@ -1,6 +1,6 @@
 # thinkshout/drupal-integrations
 
-Add this project to any Drupal distribution based on drupal/core-composer-scaffold to enable it for use with ThinkShout.
+Add this project to any Drupal distribution based on [drupal/core-composer-scaffold](https://github.com/drupal/core-composer-scaffold) to enable it for use with ThinkShout.
 
 This project enables the following useful things:
 
@@ -9,6 +9,8 @@ This project enables the following useful things:
 ## Enabling this project
 
 This project must be enabled in the top-level composer.json file, or it will be ignored and will not perform any of its functions.
+
+Add the "repositories" and "extra" entries below to composer.json then run `composer require thinkshout/drupal-integrations ^1.0@alpha`. (You'll end up with the "require" entry automatically.)
 ```
 {
     "repositories": [

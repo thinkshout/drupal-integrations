@@ -1,6 +1,6 @@
 {
     "name": "thinkshout/drupal-integrations",
-    "description": "Add this project to any Drupal distrobution based on drupal/core-composer-scaffold to get some TS resusable code.",
+    "description": "Add this project to any Drupal distribution based on drupal/core-composer-scaffold to get some TS reusable code.",
     "type": "project",
     "license": "MIT",
     "conflict": {
