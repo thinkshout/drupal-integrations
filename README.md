@@ -28,6 +28,7 @@ This project enables the following useful things:
     - enables debugging helpers for twig:
       - Automatically recompiles changes so you don't have to clear cache
       - Includes the template hints in html comments
+      - Enables caching, the first step in [setting up debugging for twig files](https://library.thinkshoutlabs.com/articles/twig-debugging-and-cache).
 
 ## Enabling this project
 
