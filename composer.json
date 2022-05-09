@@ -56,6 +56,10 @@
                     "path": "assets/web/sites/default/settings.php",
                     "overwrite": false
                 },
+                "[web-root]/sites/default/settings.dev.php": {
+                    "path": "assets/web/sites/default/settings.dev.php",
+                    "overwrite": false
+                },
                 "[web-root]/sites/default/settings.ts.php": "assets/web/sites/default/settings.ts.php",
                 "[web-root]/sites/default/services.dev.yml": "assets/web/sites/default/services.dev.yml",
                 "[web-root]/modules/contrib/ts_styleguide/src/Controller/StyleGuideController.php": "assets/web/modules/contrib/ts_styleguide/src/Controller/StyleGuideController.php",
