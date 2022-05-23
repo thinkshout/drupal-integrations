@@ -40,3 +40,6 @@ parameters:
     # Not recommended in production environments
     # @default true
     cache: true
+services:
+  cache.backend.null:
+    class: Drupal\Core\Cache\NullBackendFactory
