@@ -15,24 +15,25 @@ else {
 }
 
 // If we are not installing and have a redis host defined, setup redis.
-if (!(getenv('DRUPAL_INSTALL') || $is_installer_url) && !empty($conf['redis_client_host'])) {
+if (!(getenv('DRUPAL_INSTALL') || $is_installer_url) && defined('PANTHEON_ENVIRONMENT') && !empty($conf['redis_client_host'])) {
+  // Include the Redis services.yml file. Adjust the path if you installed to a contrib or other subdirectory.
+  $settings['container_yamls'][] = 'modules/contrib/redis/example.services.yml';
 
-  $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/services.redis.yml';
+  // PhpRedis is built into the Pantheon application container.
+  $settings['redis.connection']['interface'] = 'PhpRedis';
+  // These are dynamic variables handled by Pantheon.
+  $settings['redis.connection']['host']      = $_ENV['CACHE_HOST'];
+  $settings['redis.connection']['port']      = $_ENV['CACHE_PORT'];
+  $settings['redis.connection']['password']  = $_ENV['CACHE_PASSWORD'];
 
-  $settings['redis.connection']['interface'] = 'PhpRedis'; // Can be "Predis".
-  $settings['redis.connection']['host'] = $conf['redis_client_host'];
-  $settings['redis.connection']['port'] = $conf['redis_client_port'];
-  $settings['redis.connection']['password'] = $conf['redis_client_password'];
-  $settings['cache']['default'] = 'cache.backend.redis';
-  // Set a cache_prefix per https://github.com/md-systems/redis/issues/8
-  $env_name = (defined('PANTHEON_ENVIRONMENT')) ? PANTHEON_ENVIRONMENT : getenv('TERMINUS_ENV');
-  $settings['cache_prefix'] = 'SITE_' . $env_name;
+  $settings['cache']['default'] = 'cache.backend.redis'; // Use Redis as the default cache.
+  $settings['cache_prefix']['default'] = 'pantheon-redis';
 
-  // Always set the fast backend for bootstrap, discover and config, otherwise
-  // this gets lost when redis is enabled.
-  $settings['cache']['bins']['bootstrap'] = 'cache.backend.chainedfast';
-  $settings['cache']['bins']['discovery'] = 'cache.backend.chainedfast';
-  $settings['cache']['bins']['config'] = 'cache.backend.chainedfast';
+  $settings['redis_compress_length'] = 100;
+  $settings['redis_compress_level'] = 1;
+
+  // Set Redis to not get the cache_form (no performance difference).
+  $settings['cache']['bins']['form']      = 'cache.backend.database';
 }
 
 $settings['install_profile'] = 'minimal';
