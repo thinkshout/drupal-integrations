@@ -6,5 +6,7 @@ if [[ "$CIRCLE_BRANCH" == "develop" ]] ; then
   TERMINUS_ENV="develop"
 fi
 
+CI_PULL_REQUEST=$CIRCLE_PULL_REQUEST
+
 # https://github.com/pantheon-systems/docker-build-tools-ci/blob/6.x/scripts/set-environment
 . /build-tools-ci/scripts/set-environment
