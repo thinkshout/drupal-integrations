@@ -46,29 +46,10 @@ class StyleGuideController extends ControllerBase {
    */
   public function tsStyleGuide() {
     $themename = $this->configFactory->get('system.theme')->get('default');
-    try {
-      $template = $this->twig->load("@$themename/_includes/styleguide.html.twig");
-    }
-    catch (LoaderError $e) {
-      return [
-        '#markup' => $this->t('The current theme "@theme" does not have a template at templates/_includes/styleguide.html', ['@theme' => $themename]),
-      ];
-    }
-    $context = [];
-    $allowed_tags = array_merge(Xss::getAdminTagList(),
-          [
-            'form',
-            'label',
-            'input',
-            'select',
-            'option',
-            'radio',
-            'fieldset',
-            'legend',
-          ]);
+
     return [
-      '#markup' => $template->render($context),
-      '#allowed_tags' => $allowed_tags,
+      '#theme' => 'styleguide',
+      '#theme_name' => $themename,
     ];
   }
 

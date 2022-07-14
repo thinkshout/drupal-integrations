@@ -1,0 +1,15 @@
+<?php
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme().
+ */
+function ts_styleguide_theme() {
+  return [
+    'styleguide' => [
+      'variables' => [
+        'theme_name' => NULL,
+      ],
+    ],
+  ];
+}
