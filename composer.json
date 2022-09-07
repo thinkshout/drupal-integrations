@@ -16,7 +16,10 @@
                     "path":"assets/.ci/build/multidev-save",
                     "gitignore": false
                 },
-                "[project-root]/.ci/test/visual-regression/.gitignore": "assets/.ci/test/visual-regression/.gitignore",
+                "[project-root]/.ci/test/visual-regression/.gitignore": {
+                    "path": "assets/.ci/test/visual-regression/.gitignore",
+                    "gitignore": false
+                },
                 "[project-root]/.ci/test/visual-regression/package.json": "assets/.ci/test/visual-regression/package.json",
                 "[project-root]/.ci/test/visual-regression/README.md": "assets/.ci/test/visual-regression/README.md",
                 "[project-root]/.github/pull_request_template.md": {
