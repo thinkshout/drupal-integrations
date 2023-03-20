@@ -33,13 +33,6 @@ This project must be enabled in the top-level composer.json file, or it will be 
 Add the "repositories" and "extra" entries below to composer.json then run `composer require thinkshout/drupal-integrations ^1.0@alpha`. (You'll end up with the "require" entry automatically.)
 ```
 {
-    "repositories": [
-        {
-            "type": "vcs",
-            "name": "thinkshout/drupal-integrations",
-            "url": "git@github.com:thinkshout/drupal-integrations.git"
-        }
-    ]
     ...
     "require": {
         "thinkshout/drupal-integrations": "^1.0@alpha"
