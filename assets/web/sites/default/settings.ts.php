@@ -21,8 +21,8 @@ $settings['install_profile'] = 'minimal';
 if (isset($_SERVER['PANTHEON_ENVIRONMENT']) &&
   ($_SERVER['HTTPS'] === 'OFF') &&
   (php_sapi_name() != "cli")) {
-  if (!isset($_SERVER['HTTP_X_SSL']) ||
-    (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
+  if (!isset($_SERVER['HTTP_USER_AGENT_HTTPS']) ||
+    (isset($_SERVER['HTTP_USER_AGENT_HTTPS']) && $_SERVER['HTTP_USER_AGENT_HTTPS'] != 'ON')) {
     header('HTTP/1.0 301 Moved Permanently');
     header('Location: https://'. $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
     exit();

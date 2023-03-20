@@ -6,9 +6,6 @@
     "conflict": {
         "drupal/core": "<9"
     },
-    "require": {
-        "vlucas/phpdotenv": ">=5.0"
-    },
     "extra": {
         "drupal-scaffold": {
             "file-mapping": {
