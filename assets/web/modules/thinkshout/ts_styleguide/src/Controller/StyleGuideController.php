@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Twig\Error\LoaderError;
 
 /**
- * Creates style guide at /kmc-style-guide.
+ * Creates style guide at /styleguide.
  */
 class StyleGuideController extends ControllerBase {
 

@@ -6,9 +6,6 @@
     "conflict": {
         "drupal/core": "<9"
     },
-    "require": {
-        "vlucas/phpdotenv": ">=5.0"
-    },
     "extra": {
         "drupal-scaffold": {
             "file-mapping": {
@@ -35,10 +32,6 @@
                     "path":"assets/config-local/stage_file_proxy.settings.yml",
                     "overwrite": false
                 },
-                "[project-root]/.env.dist": {
-                    "path": "assets/.env.dist",
-                    "overwrite": false
-                },
                 "[project-root]/load.environment.php": {
                     "path": "assets/load.environment.php",
                     "overwrite": true
@@ -46,10 +39,6 @@
                 "[project-root]/README.md.orig": {
                     "path": "assets/README.md.orig",
                     "overwrite": true
-                },
-                "[project-root]/RoboFile.php": {
-                    "path": "assets/RoboFile.php",
-                    "overwrite": false
                 },
                 "[web-root]/sites/default/settings.php": {
                     "path": "assets/web/sites/default/settings.php",
