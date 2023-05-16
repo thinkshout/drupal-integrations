@@ -14,6 +14,6 @@ use Dotenv\Dotenv;
  * getenv() in some places.
  */
 if (!defined('PANTHEON_ENVIRONMENT')) {
-  $dotenv = Dotenv::createUnsafeImmutable(__DIR__);
+  $dotenv = Dotenv::createUnsafeImmutable('./');
   $dotenv->safeLoad();
 }
