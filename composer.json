@@ -57,5 +57,10 @@
                 "[web-root]/modules/thinkshout/ts_styleguide/ts_styleguide.routing.yml": "assets/web/modules/thinkshout/ts_styleguide/ts_styleguide.routing.yml"
             }
         }
+    },
+    "autoload": {
+        "files": [
+            "assets/load.environment.php"
+        ]
     }
 }
