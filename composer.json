@@ -60,7 +60,7 @@
     },
     "autoload": {
         "files": [
-            "assets/load.environment.php"
+            "src/load.environment.php"
         ]
     }
 }
