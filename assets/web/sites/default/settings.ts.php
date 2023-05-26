@@ -14,8 +14,6 @@ else {
   $config['config_split.config_split.local']['status'] = TRUE;
 }
 
-$settings['install_profile'] = 'minimal';
-
 // Require HTTPS.
 // Check if Drupal is running via command line
 if (isset($_SERVER['PANTHEON_ENVIRONMENT']) &&
