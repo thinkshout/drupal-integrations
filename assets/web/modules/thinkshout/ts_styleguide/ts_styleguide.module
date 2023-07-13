@@ -1,5 +1,4 @@
 <?php
-use Drupal\Core\Render\Element;
 
 /**
  * Implements hook_theme().
