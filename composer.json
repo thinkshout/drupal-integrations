@@ -32,10 +32,6 @@
                     "path":"assets/config-local/stage_file_proxy.settings.yml",
                     "overwrite": false
                 },
-                "[project-root]/load.environment.php": {
-                    "path": "assets/load.environment.php",
-                    "overwrite": true
-                },
                 "[project-root]/README.md.orig": {
                     "path": "assets/README.md.orig",
                     "overwrite": true
@@ -57,5 +53,10 @@
                 "[web-root]/modules/thinkshout/ts_styleguide/ts_styleguide.routing.yml": "assets/web/modules/thinkshout/ts_styleguide/ts_styleguide.routing.yml"
             }
         }
+    },
+    "autoload": {
+        "files": [
+            "src/load.environment.php"
+        ]
     }
 }
