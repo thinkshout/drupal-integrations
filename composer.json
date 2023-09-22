@@ -3,12 +3,6 @@
     "description": "Add this project to any Drupal distribution based on drupal/core-composer-scaffold to get some TS reusable code.",
     "type": "project",
     "license": "MIT",
-    "repositories": {
-        "ts_styleguide": {
-            "type": "git",
-            "url": "https://github.com/thinkshout/ts_styleguide"
-        }
-    },
     "conflict": {
         "drupal/core": "<9"
     },
