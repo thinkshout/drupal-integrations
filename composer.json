@@ -45,18 +45,16 @@
                     "overwrite": false
                 },
                 "[web-root]/sites/default/settings.ts.php": "assets/web/sites/default/settings.ts.php",
-                "[web-root]/sites/default/services.dev.yml": "assets/web/sites/default/services.dev.yml",
-                "[web-root]/modules/thinkshout/ts_styleguide/src/Controller/StyleGuideController.php": "assets/web/modules/thinkshout/ts_styleguide/src/Controller/StyleGuideController.php",
-                "[web-root]/modules/thinkshout/ts_styleguide/templates/styleguide.html.twig": "assets/web/modules/thinkshout/ts_styleguide/templates/styleguide.html.twig",
-                "[web-root]/modules/thinkshout/ts_styleguide/ts_styleguide.info.yml": "assets/web/modules/thinkshout/ts_styleguide/ts_styleguide.info.yml",
-                "[web-root]/modules/thinkshout/ts_styleguide/ts_styleguide.module": "assets/web/modules/thinkshout/ts_styleguide/ts_styleguide.module",
-                "[web-root]/modules/thinkshout/ts_styleguide/ts_styleguide.routing.yml": "assets/web/modules/thinkshout/ts_styleguide/ts_styleguide.routing.yml"
-            }
+                "[web-root]/sites/default/services.dev.yml": "assets/web/sites/default/services.dev.yml"
+           }
         }
     },
     "autoload": {
         "files": [
             "src/load.environment.php"
         ]
+    },
+    "require": {
+        "thinkshout/ts_styleguide": "dev-develop"
     }
 }
