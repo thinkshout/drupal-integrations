@@ -4,7 +4,6 @@ Add this project to any Drupal distribution based on [drupal/core-composer-scaff
 
 This project enables the following useful things:
 
-- ThinkShout styleguide on dev & test sites at /styleguide (see assets/web/modules/thinkshout/ts_styleguide)
 - Behat testing infrastructure (see assets/behat/README.md)
 - visual regression testing infrastructure (see assets/.ci/test/visual-regression/README.md)
 - github issue templates (see assets/.github/)
