@@ -55,6 +55,6 @@
         ]
     },
     "require": {
-        "thinkshout/ts_styleguide": "dev-develop"
+        "thinkshout/ts_styleguide": "^1.0"
     }
 }
