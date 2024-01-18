@@ -5,7 +5,7 @@
   "main": "backstopConfig.js",
   "dependencies": {
     "backstop-crawl": "^2.3.1",
-    "backstopjs": "^5.3.5"
+    "backstopjs": "^6.3.3"
   },
   "devDependencies": {},
   "scripts": {
