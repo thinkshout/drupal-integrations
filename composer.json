@@ -55,7 +55,7 @@
         ]
     },
     "require": {
-        "thinkshout/ts_styleguide": "^1.0",
+        "thinkshout/ts_styleguide": "^1.2",
         "vlucas/phpdotenv": ">=5.0"
     }
 }
