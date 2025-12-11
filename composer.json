@@ -27,7 +27,10 @@
                     "path": "assets/.github/ISSUE_TEMPLATE/bug_report.md",
                     "overwrite": false
                 },
-                "[project-root]/.github/workflows/bug_report.md": "assets/.github/workflows/dependabot-comment.yml",
+                "[project-root]/.github/workflows/dependabot-comment.yml": {
+                    "path": "assets/.github/workflows/dependabot-comment.yml",
+                    "gitignore": false
+                },
                 "[project-root]/.github/CODEOWNERS": {
                     "path": "assets/.github/CODEOWNERS",
                     "overwrite": false
