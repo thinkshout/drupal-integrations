@@ -29,12 +29,12 @@ This project enables the following useful things:
 
 This project must be enabled in the top-level composer.json file, or it will be ignored and will not perform any of its functions.
 
-Add the "repositories" and "extra" entries below to composer.json then run `composer require thinkshout/drupal-integrations ^1.0@alpha`. (You'll end up with the "require" entry automatically.)
+Add the "repositories" and "extra" entries below to composer.json then run `composer require thinkshout/drupal-integrations ^3.0`. (You'll end up with the "require" entry automatically.)
 ```
 {
     ...
     "require": {
-        "thinkshout/drupal-integrations": "^1.0@alpha"
+        "thinkshout/drupal-integrations": "^3.0"
     },
     ...
     "extra": {
