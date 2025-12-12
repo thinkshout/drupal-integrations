@@ -27,6 +27,18 @@
                     "path": "assets/.github/ISSUE_TEMPLATE/bug_report.md",
                     "overwrite": false
                 },
+                "[project-root]/.github/workflows/dependabot-comment.yml": {
+                    "path": "assets/.github/workflows/dependabot-comment.yml",
+                    "gitignore": false
+                },
+                "[project-root]/.github/CODEOWNERS": {
+                    "path": "assets/.github/CODEOWNERS",
+                    "overwrite": false
+                },
+                "[project-root]/.github/dependabot.yml": {
+                    "path": "assets/.github/dependabot.yml",
+                    "overwrite": false
+                },
                 "[project-root]/config-local/config_suite.settings.yml": "assets/config-local/config_suite.settings.yml",
                 "[project-root]/config-local/stage_file_proxy.settings.yml": {
                     "path":"assets/config-local/stage_file_proxy.settings.yml",
