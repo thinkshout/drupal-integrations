@@ -46,3 +46,15 @@ Add the "repositories" and "extra" entries below to composer.json then run `comp
     }
 }
 ```
+
+## Altering scaffolding
+
+If you need for any reason to remove a file that is scaffolded by this project, you'll need to specifically call that out in your composer.json, or the file will continue to be pulled in. For example, if you aren't using Config Suite on your site, you can do this to prevent its configuration file from being scaffolded:
+```
+"drupal-scaffold": {
+    "file-mapping": {
+      "[project-root]/config-local/config_suite.settings.yml": false
+    }
+  }
+}
+```
