@@ -1,0 +1,6 @@
+# These are people who will be notified of Dependabot prs.
+# See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners?versionId=free-pro-team%40latest&productId=code-security&restPage=dependabot%2Cdependabot-version-updates%2Cabout-dependabot-version-updates#example-of-a-codeowners-file
+# Global user example:
+# *   @my-github-username
+# Folder example:
+# /path/to/my/theme   @frontend-dev-github-username
