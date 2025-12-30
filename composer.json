@@ -14,8 +14,8 @@
                     "gitignore": false
                 },
                 "[project-root]/.ci/test/visual-regression/.gitignore": {
-                    "path": "assets/.ci/test/visual-regression/.gitignore",
-                    "gitignore": false
+                    "path":"assets/.ci/test/visual-regression/.gitignore",
+                    "overwrite": false
                 },
                 "[project-root]/.ci/test/visual-regression/package.json": "assets/.ci/test/visual-regression/package.json",
                 "[project-root]/.ci/test/visual-regression/README.md": "assets/.ci/test/visual-regression/README.md",
