@@ -1,3 +1,17 @@
+## How to bypass Pantheon's interstitial:
+Create a file at `backstop_data/engine_scripts/bypassInterstitial.js` containing this:
+
+```js
+module.exports = async (page, scenario, vp) => {
+    await page.setExtraHTTPHeaders({
+        'Deterrence-Bypass': '1',
+    });
+};
+```
+
+In your backstopConfig.js, add this in your scenariosToTest push arguments after `misMatchThreshold`:
+`onBeforeScript: "onBefore.js",`
+
 ## How to use backstopjs:
 
 You can install backstop by entering this directory:
