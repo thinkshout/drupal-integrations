@@ -10,7 +10,7 @@ module.exports = async (page, scenario, vp) => {
 ```
 
 In your backstopConfig.js, add this in your scenariosToTest push arguments after `misMatchThreshold`:
-`onBeforeScript: "onBefore.js",`
+`onBeforeScript: "bypassInterstitial.js",`
 
 ## How to use backstopjs:
 
